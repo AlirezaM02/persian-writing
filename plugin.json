@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "persian-writing",
+  "version": "1.3.6",
+  "description": "Professional Persian writing, orthography, and RTL document guidance for Hermes Agent.",
+  "author": {
+    "name": "ali2000hos",
+    "url": "https://github.com/ali2000hos"
+  },
+  "homepage": "https://github.com/ali2000hos/persian-writing",
+  "repository": "https://github.com/ali2000hos/persian-writing",
+  "license": "MIT",
+  "keywords": ["persian", "farsi", "rtl", "writing", "orthography", "documents"]
+}

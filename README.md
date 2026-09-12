@@ -45,6 +45,12 @@ git clone https://github.com/ali2000hos/persian-writing ~/.claude/skills/persian
 ```
 or as a plugin: `/plugin marketplace add ali2000hos/persian-writing`
 
+**Hermes Agent:** this repository is a portable Agent Plugins v1 package. Install it from the repository:
+```bash
+hermes plugins install ali2000hos/persian-writing --enable
+```
+The plugin is enabled immediately and exposes the `persian-writing` skill. To install without enabling, use `--no-enable`, then run `hermes plugins enable persian-writing`. Verify with `hermes plugins list`; restart the gateway before using the skill in an already-running Hermes process.
+
 **Cursor / Windsurf / other agents:** clone into your repo (e.g.
 `skills/persian-writing/`) and add one rule line:
 `For any Persian/Farsi task, read skills/persian-writing/SKILL.md and follow it.`

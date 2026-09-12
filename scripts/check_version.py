@@ -2,7 +2,7 @@
 """
 check_version.py — verify the version number is identical everywhere.
 
-Version strings live in four places that are easy to update separately and
+Version strings live in six places that are easy to update separately and
 then forget. A mismatch is invisible until someone installs the package and
 reports a version that doesn't exist. Run this before every release.
 
@@ -21,6 +21,10 @@ SITES = [
      re.compile(r'^(\s*version:\s*)([0-9]+\.[0-9]+\.[0-9]+)\s*$', re.M), r'\g<1>{v}'),
     ('.claude-plugin/plugin.json',
      re.compile(r'("version"\s*:\s*")([0-9]+\.[0-9]+\.[0-9]+)(")'), r'\g<1>{v}\g<3>'),
+    ('plugin.json',
+     re.compile(r'("version"\s*:\s*")([0-9]+\.[0-9]+\.[0-9]+)(")'), r'\g<1>{v}\g<3>'),
+    ('skills/persian-writing/SKILL.md',
+     re.compile(r'^(\s*version:\s*)([0-9]+\.[0-9]+\.[0-9]+)\s*$', re.M), r'\g<1>{v}'),
     ('scripts/persian_cleanup.py',
      re.compile(r'(__version__\s*=\s*")([0-9]+\.[0-9]+\.[0-9]+)(")'), r'\g<1>{v}\g<3>'),
 ]
